@@ -81,14 +81,14 @@ echo
                 file="/root/TestGround_Pushover.sh"
                 if [ -f "$file" ]
                 then
-                        echo -e "\033[33mFile lokal vorhanden. Moechten Sie die vorhanden Version nutzen (v)? Oder ggf. eine neuer Verion herunterladen (d)? Abbrechen mit (q)\033[0m"
+                        echo -e "\033[33mFile lokal vorhanden. Moechten Sie die vorhanden Version nutzen (v)? Oder ggf. eine neuere Verion herunterladen (d)? Abbrechen mit (q)\033[0m"
                         read x
                         case $x in
                         [Vv]* ) /root/TestGround_Pushover.sh ;;
                         [Dd]* ) wget https://raw.githubusercontent.com/smeagel73/TestGround/master/TestGround_Pushover.sh -O /root/TestGround_Pushover.sh &>/dev/null && chmod +x /root/TestGround_Pushover.sh &>/dev/null && /root/TestGround_Pushover.sh
                         esac
                 else
-                        wget https://www.dropbox.com/s/0ozzpz509hw4jaq/TestGround_Firmwarecheck.sh?dl=1 -O /root/TestGround_Firmwarecheck.sh &>/dev/null && chmod +x /root/TestGround_Firmwarecheck.sh &>/dev/null && /root/TestGroun$
+                        wget https://raw.githubusercontent.com/smeagel73/TestGround/master/TestGround_Pushover.sh -O /root/TestGround_Pushover.sh &>/dev/null && chmod +x /root/TestGround_Pushover.sh &>/dev/null && /root/TestGround_Pushover.sh
                 fi
 		read -p "[ENTER] druecken zum fortfahren..."
                 ;;
