@@ -1,5 +1,5 @@
 # TestGround
-div. Test-Skripte für TDT system6
+Div. Test-Skripte fuer TDT system6.
 
 Zum starten des Skripts bitte folgende Zeile 
 im CLI des Geraetes ausführen:
