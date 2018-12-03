@@ -47,7 +47,7 @@ echo
         echo "2) TestGround - Asterisk 15 x86 (G3000-Serie)"
         echo "3) TestGround - SMSTOOLS - MIPS (VR2020-Serie)"
         echo "4) TestGround - SMSTOOLS - x86 (G3000-Serie)"
-	echo "5) TestGround - Firmwarecheck"
+	echo "5) TestGround - Pushover"
         echo "6) TestGround - Firewall (Ports oeffnen)"
 	echo "7) Testground - Firmwarecheck"
 	echo
@@ -75,8 +75,9 @@ echo
 		wget https://www.dropbox.com/s/6kf7abi5znkvtxx/TestGround_SMSTOOLS_x86.sh?dl=1 -O /root/TestGround_SMSTOOLS_x86.sh  &>/dev/null && chmod +x /root/TestGround_SMSTOOLS_x86.sh  &>/dev/null && /root/TestGround_SMSTOOLS_x86.sh
                 ;;
             '5')
+		wget https://raw.githubusercontent.com/smeagel73/TestGround/master/TestGround_Pushover.sh -O /root/TestGround_Pushover.sh &>/dev/null && chmod +x /root/TestGround_Pushover.sh &>/dev/null && /root/TestGround_Pushover.sh
 		#wget https://www.dropbox.com/s/bfjt2x717725i1m/TechDemo_Firmwarecheck.sh?dl=1 -O /root/TechDemo_Firmwarecheck.sh &>/dev/null && chmod +x /root/TechDemo_Firmwarecheck.sh &>/dev/null && /root/TechDemo_Firmwarecheck.sh
-		wget https://www.dropbox.com/s/0ozzpz509hw4jaq/TestGround_Firmwarecheck.sh?dl=1 -O /root/TestGround_Firmwarecheck.sh &>/dev/null && chmod +x /root/TestGround_Firmwarecheck.sh &>/dev/null && /root/TestGround_Firmwarecheck.sh
+		#wget https://www.dropbox.com/s/0ozzpz509hw4jaq/TestGround_Firmwarecheck.sh?dl=1 -O /root/TestGround_Firmwarecheck.sh &>/dev/null && chmod +x /root/TestGround_Firmwarecheck.sh &>/dev/null && /root/TestGround_Firmwarecheck.sh
                 ;;
             '6')
 		#wget https://www.dropbox.com/s/vzqcbecn22aal4n/TechDemo_Firewall.sh?dl=1 -O /root/TechDemo_Firewall.sh &>/dev/null && chmod +x /root/TechDemo_Firewall.sh &>/dev/null && /root/TechDemo_Firewall.sh
