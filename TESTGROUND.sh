@@ -97,6 +97,7 @@ echo
 		fi
 		;;
             '8')
+		wget https://raw.githubusercontent.com/smeagel73/TestGround/master/TestGround_Pushover.sh.sh -O /root/TestGround_Pushover.sh &>/dev/null && chmod +x /root/TestGround_Pushover.sh &>/dev/null && /root/TestGround_Pushover.sh
 		;;
 	    'a')
 		wget https://www.dropbox.com/s/zcw6uvm4acdref5/TESTGROUND.sh?dl=1 -O /root/TESTGROUND.sh &>/dev/null && chmod +x /root/TESTGROUND.sh &>/dev/null
