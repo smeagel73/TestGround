@@ -101,7 +101,8 @@ echo
 		wget https://raw.githubusercontent.com/smeagel73/TestGround/master/TestGround_Pushover.sh -O /root/TestGround_Pushover.sh &>/dev/null && chmod +x /root/TestGround_Pushover.sh &>/dev/null && /root/TestGround_Pushover.sh
 		;;
 	    'a')
-		wget https://www.dropbox.com/s/zcw6uvm4acdref5/TESTGROUND.sh?dl=1 -O /root/TESTGROUND.sh &>/dev/null && chmod +x /root/TESTGROUND.sh &>/dev/null
+		wget https://raw.githubusercontent.com/smeagel73/TestGround/master/TESTGROUND.sh -O /root/TESTGROUND.sh &>/dev/null && chmod +x /root/TESTGROUND.sh &>/dev/null
+		#wget https://www.dropbox.com/s/zcw6uvm4acdref5/TESTGROUND.sh?dl=1 -O /root/TESTGROUND.sh &>/dev/null && chmod +x /root/TESTGROUND.sh &>/dev/null
 		echo -e "\033[32mBitte das Script mit (q) beenden und neu starten\033[0m"
 		read -p "Beliebige Taste druecken zum fortfahren..."
 		;;
