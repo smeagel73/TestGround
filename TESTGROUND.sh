@@ -75,9 +75,22 @@ echo
 		wget https://www.dropbox.com/s/6kf7abi5znkvtxx/TestGround_SMSTOOLS_x86.sh?dl=1 -O /root/TestGround_SMSTOOLS_x86.sh  &>/dev/null && chmod +x /root/TestGround_SMSTOOLS_x86.sh  &>/dev/null && /root/TestGround_SMSTOOLS_x86.sh
                 ;;
             '5')
-		wget https://raw.githubusercontent.com/smeagel73/TestGround/master/TestGround_Pushover.sh -O /root/TestGround_Pushover.sh &>/dev/null && chmod +x /root/TestGround_Pushover.sh &>/dev/null && /root/TestGround_Pushover.sh
+		#wget https://raw.githubusercontent.com/smeagel73/TestGround/master/TestGround_Pushover.sh -O /root/TestGround_Pushover.sh &>/dev/null && chmod +x /root/TestGround_Pushover.sh &>/dev/null && /root/TestGround_Pushover.sh
 		#wget https://www.dropbox.com/s/bfjt2x717725i1m/TechDemo_Firmwarecheck.sh?dl=1 -O /root/TechDemo_Firmwarecheck.sh &>/dev/null && chmod +x /root/TechDemo_Firmwarecheck.sh &>/dev/null && /root/TechDemo_Firmwarecheck.sh
 		#wget https://www.dropbox.com/s/0ozzpz509hw4jaq/TestGround_Firmwarecheck.sh?dl=1 -O /root/TestGround_Firmwarecheck.sh &>/dev/null && chmod +x /root/TestGround_Firmwarecheck.sh &>/dev/null && /root/TestGround_Firmwarecheck.sh
+                file="/root/TestGround_Pushover.sh"
+                if [ -f "$file" ]
+                then
+                        echo -e "\033[33mFile lokal vorhanden. Moechten Sie die vorhanden Version nutzen (v)? Oder ggf. eine neuer Verion herunterladen (d)? Abbrechen mit (q)\033[0m"
+                        read x
+                        case $x in
+                        [Vv]* ) /root/TestGround_Pushover.sh ;;
+                        [Dd]* ) wget https://raw.githubusercontent.com/smeagel73/TestGround/master/TestGround_Pushover.sh -O /root/TestGround_Pushover.sh &>/dev/null && chmod +x /root/TestGround_Pushover.sh &>/dev/null && /root/TestGround_Pushover.sh
+                        esac
+                else
+                        wget https://www.dropbox.com/s/0ozzpz509hw4jaq/TestGround_Firmwarecheck.sh?dl=1 -O /root/TestGround_Firmwarecheck.sh &>/dev/null && chmod +x /root/TestGround_Firmwarecheck.sh &>/dev/null && /root/TestGroun$
+                fi
+		read -p "[ENTER] druecken zum fortfahren..."
                 ;;
             '6')
 		#wget https://www.dropbox.com/s/vzqcbecn22aal4n/TechDemo_Firewall.sh?dl=1 -O /root/TechDemo_Firewall.sh &>/dev/null && chmod +x /root/TechDemo_Firewall.sh &>/dev/null && /root/TechDemo_Firewall.sh

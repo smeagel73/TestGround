@@ -80,7 +80,7 @@ Supported options:
     -t  <title>     Titel der Nachricht. Muss in Anfuehrungszeichen eingegeben werden
     -p  <priority>  Prioritaet der Nachricht (Wert von -2 bis 2 moeglich
                     2 entspricht der hoechsten und -2 der niedrigsten Prioritaet
-    -e		    Die Datei pushover editieren um user key, api key und device fest zu hinterlegen	
+    -e		    Die Konfig-Datei testground.config editieren um user key, api key und device fest zu hinterlegen	
 EOT
 }
 
@@ -139,7 +139,7 @@ while getopts "${COMMAND_PARAM}"  opt; do
 	>&2
       	;;
     e)
-        nano /usr/sbin/pushover
+        nano /permdata/testground.config
         exit
         >&2       
         ;;
