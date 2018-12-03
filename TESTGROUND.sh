@@ -53,6 +53,7 @@ echo
         echo "8) TestGround - Pushover"
 	echo
         echo "a) Aktuelles TestGround-Skript herunterladen"
+	echo "c) testground.config bearbeiten"
 	echo "q) Quit"
         echo
 
@@ -104,6 +105,9 @@ echo
 		echo -e "\033[32mBitte das Script mit (q) beenden und neu starten\033[0m"
 		read -p "Beliebige Taste druecken zum fortfahren..."
 		;;
+            'c')
+                wget https://raw.githubusercontent.com/smeagel73/TestGround/master/TestGround_EditConfig.sh -O /root/TestGround_EditConfig.sh &>/dev/null && chmod +x /root/TestGround_EditConfig.sh &>/dev/null && /root/TestGround_EditConfig.sh
+                ;;
             'q') clear;;
             *)   echo "menu item is not available; try again!";;
         esac
