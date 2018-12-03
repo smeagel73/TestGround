@@ -49,8 +49,7 @@ echo
         echo "4) TestGround - SMSTOOLS - x86 (G3000-Serie)"
 	echo "5) TestGround - Firmwarecheck"
         echo "6) TestGround - Firewall (Ports oeffnen)"
-	echo "7) TestGround - Firmwarecheck"
-        echo "8) TestGround - Pushover"
+	echo "7) Testground - Firmwarecheck"
 	echo
         echo "a) Aktuelles TestGround-Skript herunterladen"
 	echo "c) TestGround-Konfiguration bearbeiten"
@@ -97,14 +96,14 @@ echo
 		        wget https://www.dropbox.com/s/0ozzpz509hw4jaq/TestGround_Firmwarecheck.sh?dl=1 -O /root/TestGround_Firmwarecheck.sh &>/dev/null && chmod +x /root/TestGround_Firmwarecheck.sh &>/dev/null && /root/TestGround_Firmwarecheck.sh
 		fi
 		;;
-            '8')
-		wget https://raw.githubusercontent.com/smeagel73/TestGround/master/TestGround_Pushover.sh -O /root/TestGround_Pushover.sh &>/dev/null && chmod +x /root/TestGround_Pushover.sh &>/dev/null && /root/TestGround_Pushover.sh
-		;;
 	    'a')
 		wget https://www.dropbox.com/s/zcw6uvm4acdref5/TESTGROUND.sh?dl=1 -O /root/TESTGROUND.sh &>/dev/null && chmod +x /root/TESTGROUND.sh &>/dev/null
 		echo -e "\033[32mBitte das Script mit (q) beenden und neu starten\033[0m"
 		read -p "Beliebige Taste druecken zum fortfahren..."
 		;;
+            'c')
+		wget https://raw.githubusercontent.com/smeagel73/TestGround/master/TestGround_EditConfig.sh -O /root/TestGround_EditConfig.sh &>/dev/null && chmod +x /root/TestGround_EditConfig.sh &>/dev/null && /root/TestGround_EditConfig.sh
+                ;;
             'q') clear;;
             *)   echo "menu item is not available; try again!";;
         esac
