@@ -120,8 +120,7 @@ echo
 		wget https://raw.githubusercontent.com/smeagel73/TestGround/master/TestGround_EditConfig.sh -O /root/TestGround_EditConfig.sh &>/dev/null && chmod +x /root/TestGround_EditConfig.sh &>/dev/nulln && /root/TestGround_EditConfig.sh
                 ;;
             'q') rm /root/TestGround*
-	    	rm /root/TESTGROUND.sh
-		clear;;
+	    	 clear;;
             *)   echo "menu item is not available; try again!";;
         esac
 done
