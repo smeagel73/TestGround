@@ -43,13 +43,15 @@ echo
         echo
         echo -e "\033[32mEingabe waehlen!\033[0m"
         echo
-        echo "1) TestGround - Asterisk 15 MIPS (VR2020-Serie)"
+        echo "1) TestGround - Asterisk 15 MIPS (VR202x-Serie)"
         echo "2) TestGround - Asterisk 15 x86 (G3000-Serie)"
-        echo "3) TestGround - SMSTOOLS - MIPS (VR2020-Serie)"
+        echo "3) TestGround - SMSTOOLS - MIPS (VR202x-Serie)"
         echo "4) TestGround - SMSTOOLS - x86 (G3000-Serie)"
 	echo "5) TestGround - Pushover"
         echo "6) TestGround - Firewall (Ports oeffnen)"
 	echo "7) Testground - Firmwarecheck"
+        echo "8) TestGround - WireGuard - x86 (G3000-Serie)"
+        echo "9) TestGround - WireGuard - MIPS (VR202x-Serie)"
 	echo
         echo "a) Aktuelles TestGround-Skript herunterladen"
 	echo "c) TestGround-Konfiguration bearbeiten"
@@ -110,6 +112,12 @@ echo
 		        wget https://www.dropbox.com/s/0ozzpz509hw4jaq/TestGround_Firmwarecheck.sh?dl=1 -O /root/TestGround_Firmwarecheck.sh &>/dev/null && chmod +x /root/TestGround_Firmwarecheck.sh &>/dev/null && /root/TestGround_Firmwarecheck.sh
 		fi
 		;;
+            '8')
+                wget https://raw.githubusercontent.com/smeagel73/TestGround/master/TestGround_WireGuard_x86.sh -O /root/TestGround_WireGuard_x86.sh &>/dev/null && chmod +x /root/TestGround_WireGuard_x86.sh &>/dev/null && /root/TestGround_WireGuard_x86.sh
+                ;;
+            '9')
+		wget https://raw.githubusercontent.com/smeagel73/TestGround/master/TestGround_WireGuard_mips.sh -O /root/TestGround_WireGuard_mips.sh &>/dev/null && chmod +x /root/TestGround_WireGuard_mips.sh &>/dev/null && /root/TestGround_WireGuard_mips.sh
+                ;;
 	    'a')
 		wget https://raw.githubusercontent.com/smeagel73/TestGround/master/TESTGROUND.sh -O /root/TESTGROUND.sh &>/dev/null && chmod +x /root/TESTGROUND.sh &>/dev/null
 		#wget https://www.dropbox.com/s/zcw6uvm4acdref5/TESTGROUND.sh?dl=1 -O /root/TESTGROUND.sh &>/dev/null && chmod +x /root/TESTGROUND.sh &>/dev/null
