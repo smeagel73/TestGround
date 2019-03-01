@@ -76,3 +76,4 @@ echo -e "|                                                                      
 echo -e "|     Die Installation von Mosquitto auf diesem System ist abgeschlossen.      |"
 echo -e "|                                                                              |"
 echo -e " ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯ \033[0m"
+rm /root/TestGround_Mosquitto.sh
