@@ -77,4 +77,4 @@ echo -e "|     Die Installation von Mosquitto auf diesem System ist abgeschlosse
 echo -e "|     Um MQTT von extern erreichbar zu machen - Firewall Regel erstellen.      |"      
 echo -e "|                                                                              |"
 echo -e " ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯ \033[0m"
-rm /root/TestGround_Mosquitto.sh
+rm /root/TestGround_Mosquitto_mips.sh
