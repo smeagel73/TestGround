@@ -36,22 +36,23 @@ echo -e "\033[34m # Software auf dem Geraet.                                    
 echo -e "\033[34m # Dadurch verlieren Sie alle Ansprueche auf Support, Garantie und Gewaehrleistung fuer dieses Geraet            #\033[0m"
 echo -e "\033[34m # Diese Software wird weder vom Hersteller des Geraetes entwickelt noch unterstuetzt.                           #\033[0m"
 echo -e "\033[34m #                                                                                                               #\033[0m"
-echo -e "\033[34m # (C)2018 by Thorsten Skotnica                                                                                  #\033[0m"
+echo -e "\033[34m # (C)2019 by Thorsten Skotnica                                                                                  #\033[0m"
 echo -e "\033[34m #################################################################################################################\033[0m"
 echo
 echo
         echo
         echo -e "\033[32mEingabe waehlen!\033[0m"
         echo
-        echo "1) TestGround - Asterisk 15 MIPS (VR202x-Serie)"
-        echo "2) TestGround - Asterisk 15 x86 (G3000-Serie)"
-        echo "3) TestGround - SMSTOOLS - MIPS (VR202x-Serie)"
-        echo "4) TestGround - SMSTOOLS - x86 (G3000-Serie)"
-	echo "5) TestGround - Pushover"
-        echo "6) TestGround - Firewall (Ports oeffnen)"
-	echo "7) Testground - Firmwarecheck"
-        echo "8) TestGround - WireGuard - x86 (G3000-Serie)"
-        echo "9) TestGround - WireGuard - MIPS (VR202x-Serie)"
+        echo " 1) TestGround - Asterisk 15 MIPS (VR202x-Serie)"
+        echo " 2) TestGround - Asterisk 15 x86 (G3000-Serie)"
+        echo " 3) TestGround - SMSTOOLS - MIPS (VR202x-Serie)"
+        echo " 4) TestGround - SMSTOOLS - x86 (G3000-Serie)"
+	echo " 5) TestGround - Pushover"
+        echo " 6) TestGround - Firewall (Ports oeffnen)"
+	echo " 7) Testground - Firmwarecheck"
+        echo " 8) TestGround - WireGuard - x86 (G3000-Serie)"
+        echo " 9) TestGround - WireGuard - MIPS (VR202x-Serie)"
+	echo "10) TestGround - Mosquitto (MQTT) - MIPS (VR202x-Serie)"
 	echo
         echo "a) Aktuelles TestGround-Skript herunterladen"
 	echo "c) TestGround-Konfiguration bearbeiten"
@@ -118,6 +119,9 @@ echo
             '9')
 		wget https://raw.githubusercontent.com/smeagel73/TestGround/master/TestGround_WireGuard_mips.sh -O /root/TestGround_WireGuard_mips.sh &>/dev/null && chmod +x /root/TestGround_WireGuard_mips.sh &>/dev/null && /root/TestGround_WireGuard_mips.sh
                 ;;
+            '10')
+		wget https://raw.githubusercontent.com/smeagel73/TestGround/master/TestGround_Mosquitto_mips.sh -O /root/TestGround_Mosquitto_mips.sh &>/dev/null && chmod +x /root/TestGround_Mosquitto_mips.sh &>/dev/null && /root/TestGround_Mosquitto_mips.sh
+                ;;		
 	    'a')
 		wget https://raw.githubusercontent.com/smeagel73/TestGround/master/TESTGROUND.sh -O /root/TESTGROUND.sh &>/dev/null && chmod +x /root/TESTGROUND.sh &>/dev/null
 		#wget https://www.dropbox.com/s/zcw6uvm4acdref5/TESTGROUND.sh?dl=1 -O /root/TESTGROUND.sh &>/dev/null && chmod +x /root/TESTGROUND.sh &>/dev/null
