@@ -110,4 +110,5 @@ echo -e "\033[32m #                                                             
 echo -e "\033[32m # (C) 2019 by Thorsten Skotnica                                                                                #\033[0m"
 echo -e "\033[32m ################################################################################################################\033[0m"
 
-rm TestGround_WireGuard_mips.sh
+rm /root/TestGround_WireGuard_mips.sh
+
