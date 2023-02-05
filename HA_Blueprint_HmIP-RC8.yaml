@@ -4,8 +4,11 @@ blueprint:
   domain: automation
   input:
     remote:
-        name: Homematic Device
-        description: Please select a HmIP-WRC6 entity of your Homematic (not Homematic Cloud) integration by typing in the name of the device which was set in your CCU.
+      name: 6-Button Device
+      description: Please select a 6-Button device of your Homematic(IP) Local integration.
+      selector:
+        device:
+          integration: homematicip_local
         
     action_1_short:
         name: Action
