@@ -111,7 +111,6 @@ blueprint:
       default: []
       selector:
         action: {}		
-
 trigger:
 - platform: event
   event_type: homematic.keypress
