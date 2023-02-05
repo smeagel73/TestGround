@@ -167,7 +167,7 @@ action:
     - condition: template
       value_template: '{{ trigger.event.data.type  == ''press_long'' and trigger.event.data.subtype  == 6 }}'
     sequence: !input 'action_6_long'
-	- conditions:
+  - conditions:
     - condition: template
       value_template: '{{ trigger.event.data.type  == ''press_short'' and trigger.event.data.subtype  == 7 }}'
     sequence: !input 'action_7_short'
