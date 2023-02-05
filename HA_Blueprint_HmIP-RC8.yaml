@@ -1,5 +1,5 @@
 blueprint:
-  name: Actions for 8-Button Homematic(IP) remote control device
+  name: Actions for 8-Button Homematic(IP) HmIP-RC8 remote control device
   description: When a button is pressed, the defined actions will be executed. Please
     keep in mind, that long-press actions might be executed multiple times, according
     to your configured minimum duration for long press. This can be configured in
