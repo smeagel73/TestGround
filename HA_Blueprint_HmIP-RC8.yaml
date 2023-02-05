@@ -105,12 +105,12 @@ blueprint:
       default: []
       selector:
         action: {}
-#    action_8_long:
-#      name: Action
-#      description: 8-Button, Long Press
-#      default: []
-#      selector:
-#        action: {}
+    action_8_long:
+      name: Action
+      description: 8-Button, Long Press
+      default: []
+      selector:
+        action: {}
 trigger:
 - platform: event
   event_type: homematic.keypress
